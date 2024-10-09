@@ -4,7 +4,7 @@ function findUniqueVowel(string_) {
   [...string_].forEach((e) => {
     if (vowels.includes(e)) {
       if (vowelCOUNT[e]) {
-        vowelCOUNT = vowelCOUNT[e] + 1;
+        vowelCOUNT[e] = vowelCOUNT[e] + 1;
       } else {
         vowelCOUNT[e] = 1;
       }
